@@ -13,6 +13,10 @@
 		FAF16F07221BE09400F9EB90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF16F05221BE09400F9EB90 /* Main.storyboard */; };
 		FAF16F09221BE09600F9EB90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF16F08221BE09600F9EB90 /* Assets.xcassets */; };
 		FAF16F0C221BE09600F9EB90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF16F0A221BE09600F9EB90 /* LaunchScreen.storyboard */; };
+		FAF16F16221BE29400F9EB90 /* ApiPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16F15221BE29400F9EB90 /* ApiPaths.swift */; };
+		FAF16F18221BE29E00F9EB90 /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16F17221BE29E00F9EB90 /* BaseApi.swift */; };
+		FAF16F1A221BE2AC00F9EB90 /* BaseApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16F19221BE2AC00F9EB90 /* BaseApiResponse.swift */; };
+		FAF16F1C221BE36500F9EB90 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16F1B221BE36500F9EB90 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		FAF16F08221BE09600F9EB90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAF16F0B221BE09600F9EB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAF16F0D221BE09600F9EB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF16F15221BE29400F9EB90 /* ApiPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiPaths.swift; sourceTree = "<group>"; };
+		FAF16F17221BE29E00F9EB90 /* BaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
+		FAF16F19221BE2AC00F9EB90 /* BaseApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApiResponse.swift; sourceTree = "<group>"; };
+		FAF16F1B221BE36500F9EB90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +86,34 @@
 		FAF16F00221BE09400F9EB90 /* NetWorkPack */ = {
 			isa = PBXGroup;
 			children = (
+				FAF16F13221BE23500F9EB90 /* NetworkModel */,
 				FAF16F01221BE09400F9EB90 /* AppDelegate.swift */,
 				FAF16F03221BE09400F9EB90 /* ViewController.swift */,
 				FAF16F05221BE09400F9EB90 /* Main.storyboard */,
 				FAF16F08221BE09600F9EB90 /* Assets.xcassets */,
 				FAF16F0A221BE09600F9EB90 /* LaunchScreen.storyboard */,
 				FAF16F0D221BE09600F9EB90 /* Info.plist */,
+				FAF16F1B221BE36500F9EB90 /* Constants.swift */,
 			);
 			path = NetWorkPack;
+			sourceTree = "<group>";
+		};
+		FAF16F13221BE23500F9EB90 /* NetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAF16F14221BE28000F9EB90 /* BaseNetworkModel */,
+			);
+			path = NetworkModel;
+			sourceTree = "<group>";
+		};
+		FAF16F14221BE28000F9EB90 /* BaseNetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAF16F17221BE29E00F9EB90 /* BaseApi.swift */,
+				FAF16F15221BE29400F9EB90 /* ApiPaths.swift */,
+				FAF16F19221BE2AC00F9EB90 /* BaseApiResponse.swift */,
+			);
+			path = BaseNetworkModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +218,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-NetWorkPack/Pods-NetWorkPack-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/KSToastView/KSToastView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -198,6 +227,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSToastView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF16F04221BE09400F9EB90 /* ViewController.swift in Sources */,
+				FAF16F18221BE29E00F9EB90 /* BaseApi.swift in Sources */,
+				FAF16F1A221BE2AC00F9EB90 /* BaseApiResponse.swift in Sources */,
 				FAF16F02221BE09400F9EB90 /* AppDelegate.swift in Sources */,
+				FAF16F16221BE29400F9EB90 /* ApiPaths.swift in Sources */,
+				FAF16F1C221BE36500F9EB90 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

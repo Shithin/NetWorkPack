@@ -3,23 +3,27 @@ PODS:
   - AlamofireObjectMapper (5.2.0):
     - Alamofire (~> 4.7)
     - ObjectMapper (~> 3.4)
+  - KSToastView (0.4.3)
   - ObjectMapper (3.4.1)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireObjectMapper
+  - KSToastView (= 0.4.3)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireObjectMapper
+    - KSToastView
     - ObjectMapper
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  KSToastView: 5f2f93816ebd2b5f83afc07d22b2e943998e730e
   ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
 
-PODFILE CHECKSUM: fa304d1722fdf2cd0e3423df71dad6066c44ae2f
+PODFILE CHECKSUM: 69f51bf52562e72b9237e26d05e94fcd7dcbd886
 
 COCOAPODS: 1.5.3

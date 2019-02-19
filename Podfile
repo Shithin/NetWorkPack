@@ -8,5 +8,6 @@ target 'NetWorkPack' do
   # Pods for NetWorkPack
 pod 'Alamofire'
 pod 'AlamofireObjectMapper'
+pod 'KSToastView', '0.4.3'
 
 end
