@@ -17,6 +17,9 @@
 		FAF16F18221BE29E00F9EB90 /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16F17221BE29E00F9EB90 /* BaseApi.swift */; };
 		FAF16F1A221BE2AC00F9EB90 /* BaseApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16F19221BE2AC00F9EB90 /* BaseApiResponse.swift */; };
 		FAF16F1C221BE36500F9EB90 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16F1B221BE36500F9EB90 /* Constants.swift */; };
+		FAF16F21221BE5D300F9EB90 /* SampleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16F1E221BE5D300F9EB90 /* SampleResponse.swift */; };
+		FAF16F22221BE5D300F9EB90 /* SampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16F1F221BE5D300F9EB90 /* SampleAPI.swift */; };
+		FAF16F23221BE5D300F9EB90 /* SampleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16F20221BE5D300F9EB90 /* SampleRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		FAF16F17221BE29E00F9EB90 /* BaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
 		FAF16F19221BE2AC00F9EB90 /* BaseApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApiResponse.swift; sourceTree = "<group>"; };
 		FAF16F1B221BE36500F9EB90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAF16F1E221BE5D300F9EB90 /* SampleResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleResponse.swift; sourceTree = "<group>"; };
+		FAF16F1F221BE5D300F9EB90 /* SampleAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAPI.swift; sourceTree = "<group>"; };
+		FAF16F20221BE5D300F9EB90 /* SampleRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,10 @@
 		FAF16F13221BE23500F9EB90 /* NetworkModel */ = {
 			isa = PBXGroup;
 			children = (
+				FAF16F1D221BE59F00F9EB90 /* SampleAPICall */,
+				FAF16F1F221BE5D300F9EB90 /* SampleAPI.swift */,
+				FAF16F20221BE5D300F9EB90 /* SampleRequest.swift */,
+				FAF16F1E221BE5D300F9EB90 /* SampleResponse.swift */,
 				FAF16F14221BE28000F9EB90 /* BaseNetworkModel */,
 			);
 			path = NetworkModel;
@@ -114,6 +124,13 @@
 				FAF16F19221BE2AC00F9EB90 /* BaseApiResponse.swift */,
 			);
 			path = BaseNetworkModel;
+			sourceTree = "<group>";
+		};
+		FAF16F1D221BE59F00F9EB90 /* SampleAPICall */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SampleAPICall;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,8 +263,11 @@
 				FAF16F18221BE29E00F9EB90 /* BaseApi.swift in Sources */,
 				FAF16F1A221BE2AC00F9EB90 /* BaseApiResponse.swift in Sources */,
 				FAF16F02221BE09400F9EB90 /* AppDelegate.swift in Sources */,
+				FAF16F21221BE5D300F9EB90 /* SampleResponse.swift in Sources */,
+				FAF16F23221BE5D300F9EB90 /* SampleRequest.swift in Sources */,
 				FAF16F16221BE29400F9EB90 /* ApiPaths.swift in Sources */,
 				FAF16F1C221BE36500F9EB90 /* Constants.swift in Sources */,
+				FAF16F22221BE5D300F9EB90 /* SampleAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

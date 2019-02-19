@@ -11,9 +11,10 @@ import Foundation
 
 struct ApiPaths {
     
-    static let baseUrlDev           = ""
-    static let baseUrlProd          = ""
+    static let baseUrlDev           = "https://reqres.in/"
+    static let baseUrlProd          = "https://reqres.in/"
 
     //All api paths goes here
+    static let sampleApi            = "api/users"
   
 }
