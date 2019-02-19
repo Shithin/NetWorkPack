@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0A22141550C426CB4B97314 /* Pods_NetWorkPack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C165067601AD8BFF00110CAA /* Pods_NetWorkPack.framework */; };
 		FAF16F02221BE09400F9EB90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16F01221BE09400F9EB90 /* AppDelegate.swift */; };
 		FAF16F04221BE09400F9EB90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16F03221BE09400F9EB90 /* ViewController.swift */; };
 		FAF16F07221BE09400F9EB90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF16F05221BE09400F9EB90 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45C0FC2A4B015475090897A1 /* Pods-NetWorkPack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorkPack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorkPack/Pods-NetWorkPack.debug.xcconfig"; sourceTree = "<group>"; };
+		B4EA412FAA877BC220E6EFEC /* Pods-NetWorkPack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorkPack.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorkPack/Pods-NetWorkPack.release.xcconfig"; sourceTree = "<group>"; };
+		C165067601AD8BFF00110CAA /* Pods_NetWorkPack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetWorkPack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF16EFE221BE09400F9EB90 /* NetWorkPack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetWorkPack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF16F01221BE09400F9EB90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF16F03221BE09400F9EB90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A22141550C426CB4B97314 /* Pods_NetWorkPack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		507F3D3129527276C2C62D9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C165067601AD8BFF00110CAA /* Pods_NetWorkPack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F18B7BF64B85B73B5F3C7093 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45C0FC2A4B015475090897A1 /* Pods-NetWorkPack.debug.xcconfig */,
+				B4EA412FAA877BC220E6EFEC /* Pods-NetWorkPack.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAF16EF5221BE09400F9EB90 = {
 			isa = PBXGroup;
 			children = (
 				FAF16F00221BE09400F9EB90 /* NetWorkPack */,
 				FAF16EFF221BE09400F9EB90 /* Products */,
+				F18B7BF64B85B73B5F3C7093 /* Pods */,
+				507F3D3129527276C2C62D9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAF16F10221BE09600F9EB90 /* Build configuration list for PBXNativeTarget "NetWorkPack" */;
 			buildPhases = (
+				28232E052E9BD2EE3F6A245D /* [CP] Check Pods Manifest.lock */,
 				FAF16EFA221BE09400F9EB90 /* Sources */,
 				FAF16EFB221BE09400F9EB90 /* Frameworks */,
 				FAF16EFC221BE09400F9EB90 /* Resources */,
+				6941DEEC70FA6571969AEE37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28232E052E9BD2EE3F6A245D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetWorkPack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6941DEEC70FA6571969AEE37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NetWorkPack/Pods-NetWorkPack-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetWorkPack/Pods-NetWorkPack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAF16EFA221BE09400F9EB90 /* Sources */ = {
@@ -280,6 +357,7 @@
 		};
 		FAF16F11221BE09600F9EB90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C0FC2A4B015475090897A1 /* Pods-NetWorkPack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +376,7 @@
 		};
 		FAF16F12221BE09600F9EB90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4EA412FAA877BC220E6EFEC /* Pods-NetWorkPack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
